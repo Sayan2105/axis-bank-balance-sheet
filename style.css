@@ -1,0 +1,473 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f8;
+    color: #252525;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 45px 38px;
+    border-radius: 12px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.06);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #97144d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.brand-mark {
+    background: #97144d;
+    color: white;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+.lock-icon {
+    width: 48px;
+    height: 48px;
+    background: #fceaf1;
+    color: #97144d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 20px;
+    letter-spacing: 9px;
+    text-align: center;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #97144d;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 15px;
+    background: #97144d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #75103b;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 12px;
+    color: #999;
+}
+
+
+/* Top Header */
+
+.top-header {
+    height: 87px;
+    width: 100%;
+    background: #fff;
+    border-top: 4px solid #97144d;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-shape {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.axis-logo {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding-left: 45px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 190px;
+    flex-shrink: 0;
+}
+
+.axis-symbol {
+    width: 37px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.banking-brand {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    gap: 10px;
+    color: #97144d;
+    white-space: nowrap;
+}
+
+.open-text {
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -2px;
+}
+
+.brand-divider {
+    height: 23px;
+    width: 1px;
+    background: #97144d;
+}
+
+.internet-text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .axis-logo {
+        padding-left: 12px;
+        width: 145px;
+        font-size: 11px;
+    }
+
+    .axis-symbol {
+        width: 30px;
+    }
+
+    .banking-brand {
+        margin-left: 12px;
+        gap: 6px;
+    }
+
+    .open-text {
+        font-size: 27px;
+    }
+
+    .internet-text {
+        font-size: 10px;
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .header-brand {
+        width: 145px;
+        padding-left: 15px;
+    }
+
+    .banking-brand {
+        margin-left: 20px;
+        gap: 6px;
+    }
+
+    .open-text {
+        font-size: 28px;
+    }
+
+    .internet-text {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 35px 25px;
+    }
+}
+
+
+
+.letter-page {
+    width: 100%;
+    min-height: calc(100vh - 87px);
+    background: #ffffff;
+    padding: 65px 8%;
+}
+
+.letter-content {
+    /* max-width: 900px; */
+    padding: 0 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+    font-size: 15px;
+    /* line-height: 1.7; */
+}
+
+.branch-name {
+    margin-bottom: 25px !important;
+    letter-spacing: 0.2px;
+}
+
+
+.recipient-details p {
+    margin: 0;
+}
+
+.customer-id {
+    margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+    .letter-page {
+        padding: 35px 22px;
+    }
+}
+
+
+/* Sample certificate */
+
+.sample-notice {
+    margin-top: 25px;
+    color: #97144d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.certificate-title {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 650;
+    text-decoration: underline;
+    /* margin: 30px 0; */
+}
+
+.certificate-intro {
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+/* Table */
+
+.coins-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 30px;
+}
+
+.coins-table td {
+    border: 1px solid #333;
+    height: 42px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Disclaimer */
+
+.disclaimer {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.disclaimer p {
+    margin: 0;
+}
+
+.gap-two {
+    margin-top: 15px !important;
+}
+
+.gap-three {
+    margin-top: 20px !important;
+}
+
+/* Document ending */
+
+.document-end {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+
+.print-controls {
+    margin-bottom: 30px;
+}
+
+.print-controls button {
+    background: #97144d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    body {
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .top-header {
+        display: none !important;
+    }
+
+    .page,
+    .print-controls {
+        display: none !important;
+    }
+
+    #mainContent {
+        display: block !important;
+        padding: 0;
+        min-height: auto;
+    }
+
+    .letter-content {
+        max-width: 100%;
+
+    }
+
+    .print-controls {
+        display: none !important;
+    }
+
+    .sample-notice {
+        display: block !important;
+    }
+
+    .coins-table {
+        page-break-inside: avoid;
+    }
+}
+
+
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    body {
+        background: white;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Keep custom header in PDF */
+    .top-header {
+        display: flex !important;
+        width: 100%;
+        break-after: avoid;
+    }
+
+    /* Hide login and print button */
+    .page,
+    .print-controls {
+        display: none !important;
+    }
+
+    /* Show letter */
+    #mainContent {
+        display: block !important;
+        padding: 20px 0;
+        min-height: auto;
+    }
+
+    .coins-table {
+        page-break-inside: avoid;
+    }
+
+}

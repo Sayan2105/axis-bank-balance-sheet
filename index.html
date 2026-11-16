@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<header class="top-header">
+
+    <svg class="header-shape" viewBox="0 0 500 87"
+         preserveAspectRatio="none">
+        <path d="M0 0 H500 V15 H235
+                 C222 15 216 22 207 35
+                 L174 76
+                 C168 84 160 87 146 87
+                 H0 Z"
+              fill="#97144d"/>
+    </svg>
+
+    <div class="axis-logo">
+        
+
+<svg class="axis-symbol" viewBox="0 0 50 45"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <!-- First diagonal: / -->
+    <path d="M1 43 L23 3 L33 3 L11 43 Z"
+          fill="white"/>
+
+    <!-- Second diagonal: \ -->
+    <path d="M23 23 L33 23 L45 43 L35 43 Z"
+          fill="white"/>
+
+</svg>
+
+
+        <span>AXIS BANK</span>
+    </div>
+
+    <div class="banking-brand">
+        <!-- <span class="open-text">open</span>
+        <span class="brand-divider"></span>
+        <span class="internet-text">INTERNET BANKING</span> -->
+    </div>
+
+</header>
+
+
+<main id="mainContent" class="letter-page" style="display: none;">
+
+    
+<div class="letter-content">
+
+
+<div class="print-controls">
+    <button type="button" onclick="printDocument()">
+        Download PDF
+    </button>
+</div>
+
+
+
+<div class="recipient-details">
+        <p class="branch-name">
+            AXIS BANK LTD. BALLABHGARH [HR] BRANCH
+        </p>
+        <p>Mr Sayan Nandi , </p>
+        <p>House no 44 nahar singh clony gali</p>
+        <p>No 2 sector 3</p>
+        <p>121004</p>
+        <p class="customer-id">Customer ID: 840271482</p>
+    </div>
+
+
+    <h2 class="certificate-title">BALANCE CERTIFICATE</h2>
+
+    <p class="certificate-intro">
+        This is to certify that the balance in the undernoted account(s) of Mr Sayan Nandi, at the close of
+        <span id="currentDate"></span> was / were as under:
+    </p>
+
+    
+<table class="coins-table">
+
+    <tbody>
+        <tr>
+            <td contenteditable="true">Currency</td>
+            <td contenteditable="true">Scheme</td>
+            <td contenteditable="true">Account No.</td>
+            <td contenteditable="true">Account name</td>
+            <td contenteditable="true">Balance</td>
+        </tr>
+
+        <tr>
+            <td contenteditable="true">INR</td>
+            <td contenteditable="true">ARIC</td>
+            <td contenteditable="true">911040067318202</td>
+            <td contenteditable="true">Sayan Nandi</td>
+            <td contenteditable="true">183,738.00 (Cr)</td>
+        </tr>
+
+        <tr>
+            <td contenteditable="true">INR</td>
+            <td contenteditable="true">ARIC</td>
+            <td contenteditable="true">923040077502928</td>
+            <td contenteditable="true">Sayan Nandi</td>
+            <td contenteditable="true">372,191.00 (Cr)</td>
+        </tr>
+
+        <tr>
+            <td contenteditable="true">INR</td>
+            <td contenteditable="true">ARIC</td>
+            <td contenteditable="true">924040075135903</td>
+            <td contenteditable="true">Sayan Nandi</td>
+            <td contenteditable="true">177,196.00 (Cr)</td>
+        </tr>
+
+        <tr>
+            <td contenteditable="true">INR</td>
+            <td contenteditable="true">ARIC</td>
+            <td contenteditable="true">926040063681869</td>
+            <td contenteditable="true">Sayan Nandi</td>
+            <td contenteditable="true">104,420.00  (Cr)</td>
+        </tr>
+
+        <tr>
+            <td contenteditable="true">INR</td>
+            <td contenteditable="true">SAPPR</td>
+            <td contenteditable="true">911010040941567</td>
+            <td contenteditable="true">Sayan Nandi</td>
+            <td contenteditable="true">29,402.42 (Cr)</td>
+        </tr>
+
+        <tr class="total-row">
+            <td contenteditable="true">Total (INR)</td>
+            <td contenteditable="true" colspan="4">10,88,744.42 (Cr)</td>
+        </tr>
+    </tbody>
+</table>
+
+    <div class="disclaimer">
+
+        <p>Disclaimer:</p>
+
+        <p class="gap-two">
+            This certificate has been issued
+        </p>
+
+        <p class="gap-two">
+            - without analysing customer's net-worth and the overall indebtedness with the issuing Bank or any other
+Bank/Financial institutions. Hence, the same shall not and cannot be construed as a solvency certificate at any
+circumstances.
+
+        </p>
+
+        <p class="gap-two">
+            - at the specific request of the customer, without any risk or responsibility on the part of the Bank, either as a <br>guarantor or otherwise, and will not constitute any liability either on the part of the Bank or the official signing it.
+        </p>
+
+        <p class="gap-three">For Axis BankLtd.</p>
+
+        <p class="gap-two">Authorized Signatory</p>
+
+        <p class="gap-two">Emp No:</p>
+
+    </div>
+
+    <div class="document-end">
+        ---------------------------------- EOD ----------------------------------
+    </div>
+
+</div>
+
+
+</main>
+
+
+
+
+    <main class="page">
+        <div class="login-card">
+
+            <div class="lock-icon">⌑</div>
+
+            <h1>Welcome back</h1>
+            <p class="subtitle">Enter your 6-digit access password to continue.</p>
+
+            <form id="passwordForm">
+                <label for="password">Access password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    maxlength="6"
+                    minlength="6"
+                    inputmode="numeric"
+                    pattern="[0-9]{6}"
+                    placeholder="••••••"
+                    autocomplete="off"
+                    required
+                >
+
+                <p id="errorMessage" class="error"></p>
+
+                <button type="submit">Continue</button>
+            </form>
+
+            <p class="footer-text">Secure access portal</p>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
